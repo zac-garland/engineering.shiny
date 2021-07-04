@@ -35,7 +35,7 @@ golem::set_golem_options()
 ## See ?usethis for more information
 usethis::use_mit_license( "Zac Garland" )  # You can set another license here
 usethis::use_readme_rmd( open = FALSE )
-# usethis::use_code_of_conduct()
+usethis::use_code_of_conduct()
 usethis::use_lifecycle_badge( "Experimental" )
 usethis::use_news_md( open = FALSE )
 
@@ -51,8 +51,8 @@ golem::use_recommended_deps()
 
 ## Favicon ----
 # If you want to change the favicon (default is golem's one)
-golem::use_favicon() # path = "path/to/ico". Can be an online file.
-golem::remove_favicon()
+golem::use_favicon("https://raw.githubusercontent.com/zac-garland/zac-garland/master/public/favicon.ico") # path = "path/to/ico". Can be an online file.
+# golem::remove_favicon()
 
 ## Add helper functions ----
 golem::use_utils_ui()
